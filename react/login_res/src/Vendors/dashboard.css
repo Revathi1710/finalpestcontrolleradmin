@@ -1,0 +1,48 @@
+.categorylist {
+    margin: 10px;
+    width: 23% !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    background: #ff9cce;
+    color: #b9226f;
+}
+.alldetails{
+    
+   
+    margin-top: 20px;
+     
+}
+.total{
+    font-size:20px;
+}
+.count{
+    font-size:30px;
+}
+.productlist {
+    margin: 10px;
+    height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: #e9ff77;
+    color: #799100;
+    width: 23% !important;
+    border-radius: 10px;
+}
+.enquirylist {
+    margin: 10px;
+    height: 120px;
+    background: #ad9be1;
+    color: #47299d;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 23% !important;
+    border-radius: 10px;
+}
+.vendorlist
+{
+    background: #ace4ff;
+    color: #0881bb;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    width: 23% !important;
+    margin: 10px;
+    height: 120px;
+}

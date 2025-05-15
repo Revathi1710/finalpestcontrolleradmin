@@ -1,0 +1,79 @@
+/* Styling for the vendor details section */
+.vendor-details {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    row-gap: 12px;
+    column-gap: 20px;
+    align-items: center;
+  }
+  
+  .vendor-label {
+    font-weight: 600;
+    color: #333;
+    text-align: right;
+  }
+  
+  .vendor-value {
+    
+    padding: 10px 12px;
+    border-radius: 4px;
+   
+  }
+  
+  /* Gallery upload section */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+  }
+  
+  .upload-box {
+    border: 2px dashed #007bff;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .upload-content p {
+    font-size: 16px;
+  }
+  
+  .image-thumbnail {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .logoImage{
+    width: 100px;
+    height: 100px;
+  }
+  .image-thumbnail2 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .containerDashboard{
+    background:white;
+    text-align: left;
+  }
+  .img-thumbnail {
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .text-secondary {
+    font-size: 1.1rem;
+  }

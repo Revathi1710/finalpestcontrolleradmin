@@ -1,0 +1,116 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.slick-track {
+  display: flex;
+}
+.slick-slider {
+  display: flex;
+  align-items: center;
+  
+  margin: 0 auto;
+}
+
+.slick-slide {
+  padding-right: 10px;
+}
+
+.slick-slide:last-child {
+  padding-right: 0;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-list {
+  margin: 0 15px;
+}
+
+.homeserviceService .slick-prev {
+  width: 50px;
+  left: -10px;
+  top: 50%;
+  position: absolute;
+  height: 50px;
+ 
+  z-index: 1;
+
+}
+
+.homeserviceService .slick-next {
+  width: 50px;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  height: 50px;
+
+  z-index: 1;
+ 
+}
+.blur-text {
+  filter: blur(4px); /* Adjust blur intensity as needed */
+  display: inline-block; /* Ensures the blur filter applies correctly */
+}
+
+.slick-prev:before, .slick-next:before { 
+
+  color: black;
+  font-size:24px;
+}
+.homeserviceService .slick-prev:focus,
+.homeserviceService .slick-prev:hover,
+.homeserviceService  .slick-next:hover,
+.homeserviceService .slick-next:focus {
+
+  outline: none;
+
+}
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+}
+/* .hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+} */
+.slidercard-body{
+ 
+    padding: 20px;
+    border-top: 1px solid #c5c5c5;
+
+}
+.sliderImge-container{
+  height: 200px;
+}
+.sliderImge-container {
+  height: 200px;
+}
+.cardcategory-image{
+  height: 100%;
+  padding: 10px;
+}
+.categorycardtitle{
+  font-size: 15px;
+  text-align: center;
+}
+
+.category-container{
+  background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.submit-btn {
+  background: #0073c2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+

@@ -1,0 +1,9 @@
+
+.list-group-item{
+
+    background: linear-gradient(90deg, rgb(241, 234, 228) -5.09%, rgba(251, 242, 225, 0) 90.72%);
+    border-top: 1px solid rgb(244, 244, 244);
+    border-bottom: 1px solid rgb(244, 244, 244);
+    padding: 12px 11px;
+    margin-top: -1px;
+}

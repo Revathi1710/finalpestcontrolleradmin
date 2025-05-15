@@ -1,0 +1,255 @@
+/* navbar.css */
+.navbar-logo {
+   /* max-height: 80px;
+    margin-right: 10px;
+    position: absolute;
+    top: -20px;
+    left:20px;*/
+    width:100%;
+  }
+ 
+  .header-row{
+    align-items: center;
+    align-content: center;
+  }
+
+
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #333; /* Adjust as needed */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Adjust hover color */
+  }
+  
+  .form-inline {
+    margin-right: 20px; /* Adjust space between search bar and other elements */
+  }
+  
+ .searchheader{
+    
+  position: absolute;
+ width:50px;
+ right: 0px;
+  background: #3d3c3a;
+  align-items: center;
+  color: aliceblue;
+height: 100%;
+  align-items: center;
+  
+ }
+ .headerinputfield{
+  padding: 0px !important;
+  height: 55px;
+  padding-left:20px !important;
+ }
+ .container1{
+    padding:10px 50px;
+    width:100%;
+ }
+  .menulist{
+    display:flex;
+  justify-content: space-evenly;
+   list-style: none;
+   align-items: center;
+   margin-bottom: 0px !important;
+  }
+  .nav-item,.nav-link{
+    justify-items: center;
+  }
+ .nav-link{
+    font-weight: 500;
+ 
+    font-size: 16px;
+ }
+ .iconsheader{
+    height:25px;
+    width:25px;
+    display:block;
+   margin-bottom: 5px;
+    font-size: x-large;
+    color:#636363;
+ }
+ .spanlogo{
+  display: block;
+    color: #FFD700;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 12px;
+
+ }
+ .logoname{
+  font-size: 25px;
+  font-weight: 600;
+  color:#636363;
+  height: 15px;
+ }
+ a:hover{
+  text-decoration: none !important;
+ }
+ .headerinputfield{
+   position: relative;
+ }
+ .search-btnseaction{
+  position: relative;
+  align-items: center;
+ }
+
+ .logoutSignupbtn{
+  background: black;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 10px;
+ }
+
+ /* Modal overlay covers the entire screen */
+.header-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content styling */
+.header-modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the buttons */
+.header-modal-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Basic styling for modal buttons */
+.header-modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect for modal buttons */
+.header-modal-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the Close button */
+.header-modal-close {
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+.mobile-header{
+  display: none !important;
+}
+
+@media only screen and (max-width: 768px){
+  html,
+  body{
+  width:100%;
+  overflow-x:hidden;
+  }
+  .desktop-header{
+    display: none !important;
+  }
+  .mobile-header{
+    display: block !important;
+  }
+  .headermobileuser{
+    background:rgb(224, 230, 239);
+    border-radius:50%;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+  .container1 {
+    padding: 10px 10px;
+    width: 100%;
+}
+.flexsearchlogo{
+  justify-content: space-between;
+  align-items: center;
+}
+.headerinputfield {
+  padding: 0px !important;
+  height: 45px;
+  padding-left: 10px !important;
+  font-size: small;
+ 
+}
+.searchsection-mobile{
+  width: 65%;
+}
+
+.logoname {
+  font-size: 18px;
+  font-weight: 600;
+  color: #636363;
+  height: 15px;
+}
+.spanlogo {
+  display: block;
+  color: #FFD700;
+  font-size:18px;
+  font-weight: 600;
+  line-height: 12px;
+}
+.usermenu-bar{
+    position: absolute;
+    background: rgb(129, 149, 165);
+    border-radius: 50%;
+   
+    padding: 5px;
+}
+.mobile-menu-list {
+  display: none;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  width: 200px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.mobile-menu-list.active {
+  display: block;
+}
+
+.usermenu-bar {
+  cursor: pointer;
+}
+.nav-item{
+  justify-items: flex-start;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.nav-link {
+  color: black;
+  font-size: 12px;
+}
+}

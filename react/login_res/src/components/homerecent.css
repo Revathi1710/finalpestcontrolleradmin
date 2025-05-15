@@ -1,0 +1,80 @@
+.homepage-container {
+    padding: 20px;
+    background-color: #f6f6f6; /* Light gray page background */
+  }
+  
+  .homepage-row {
+    display: flex;
+    gap: 16px; /* Space between columns */
+    justify-content: space-between;
+  }
+  
+  /* Each column */
+  .homepage-column {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  
+  /* Section header with "View more" link on the right */
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .section-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .section-header a {
+    color: #ff6a00; /* Alibaba-like orange */
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  /* Subtitle / small heading text */
+  .section-subtitle h4 {
+    margin: 8px 0 4px;
+    font-size: 1rem;
+  }
+  .section-subtitle p {
+    margin: 0 0 4px;
+    color: #666;
+  }
+  .popularity-score {
+    display: inline-block;
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  
+  /* Product grid inside columns */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  /* Product card styling */
+  .product-card {
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.2s ease;
+  }
+  .product-card:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  .product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  

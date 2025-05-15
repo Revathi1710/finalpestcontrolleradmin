@@ -1,0 +1,64 @@
+.add-category-container {
+    padding: 20px;
+    background: #f7f9fc;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .title h2 {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .table thead {
+    background-color: #004c97;
+    color: white;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+    font-size: 14px;
+    padding: 12px 10px;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f5f9;
+  }
+  
+  .badge {
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+  
+ 
+  
+
+  
+  .fa-plus-square,
+  .fa-minus-square {
+    color: #004c97;
+    font-size: 16px;
+  }
+  
+  /* Responsive tweaks */
+  @media only screen and (max-width: 768px) {
+    .table th, .table td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .title h2 {
+      font-size: 20px;
+    }
+  }
+  

@@ -1,0 +1,87 @@
+@media only screen and (max-width: 768px){
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
+  overflow-x: hidden;
+}
+
+.logout-container {
+  background-color: #5389c1;
+  color: white;
+}
+
+.headerlist {
+  margin-left: 10px;
+  padding: 11px;
+  text-decoration: none;
+  background: #004c97;
+  width: 13%;
+  color: white;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
+
+.headerlist.active {
+  background-color: #19191a;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.headerallList {
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.background-colorfull {
+  background: #d7d7d7;
+  padding: 5px;
+}
+
+.headerallList .active {
+  color: #ffffff;
+  background: #FDA63A;
+}
+.fullboxsidebar{
+  background-color: rgb(25 138 183) !important;
+}
+.headerlist {
+  margin-left: 10px;
+  padding: 11px;
+  text-decoration: none;
+  background: #ffffff;
+  width: 13%;
+  color: #009fed;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+.logo-name{
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .logoimagesection {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  .headerallList {
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+  }
+
+  .headerlist {
+    margin-left: 1px;
+    margin-bottom: 5px;
+  }
+}
