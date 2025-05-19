@@ -100,24 +100,24 @@ function EditVendor() {
       setPropertyImages((prev) => prev.filter((_, i) => i !== index));
     }
   };
-
-  // Get coordinates from pincode
-  const getCoordinatesFromPincode = async (pincode) => {
-    const apiKey = "0c4835f9b7b34a1b895d8a15e8e9691c"; // Replace with your OpenCage API key
-    const url = `https://api.opencagedata.com/geocode/v1/json?q=${pincode}&key=${apiKey}`;
-
+const getCoordinatesFromPincode = async (pincode) => {
+    const apiKey = 'AIzaSyCGhSnndOY38FfCgNfSldjpZQX6cT_KpC8';
+    const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${pincode}&key=${apiKey}`;
+  
     try {
       const response = await axios.get(url);
-      if (response.data.results && response.data.results.length > 0) {
-        const location = response.data.results[0];
-        const { lat, lng } = location.geometry;
+      if (
+        response.data.results &&
+        response.data.results.length > 0
+      ) {
+        const { lat, lng } = response.data.results[0].geometry.location;
         return { lat, lng };
       } else {
-        throw new Error("Unable to geocode the provided pincode");
+        throw new Error('Unable to geocode the provided pincode');
       }
     } catch (error) {
-      console.error("Geocoding Error:", error);
-      throw error;
+      console.error('Geocoding Error:', error);
+      return null;
     }
   };
 
