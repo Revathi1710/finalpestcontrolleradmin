@@ -152,8 +152,7 @@ const SearchResult = () => {
                     <th>#</th>
                     <th>Name</th>
                     <th>Number</th>
-                    <th>Email</th>
-                    <th>State</th>
+                 
                     <th>Pincode</th>
                     <th>Business Type</th>
                     <th>Created At</th>
@@ -167,8 +166,7 @@ const SearchResult = () => {
                       <td>{i + 1}</td>
                       <td>{v.name}</td>
                       <td>{v.number}</td>
-                      <td>{v.email}</td>
-                      <td>{v.state}</td>
+                      
                       <td>{v.pincode}</td>
                       <td>{v.businessType}</td>
                       <td>{new Date(v.createdAt).toLocaleDateString()}</td>
