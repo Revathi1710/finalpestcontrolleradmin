@@ -12,7 +12,8 @@ const AddVendor = () => {
     address: '',
     pincode: '',
     sinceFrom: '',
-    specialistIn: '',
+specialistIn: [], // ✅ Correct way
+
     contactPerson: '',
     contactNumber: '',
     email: '',
@@ -33,6 +34,33 @@ const AddVendor = () => {
   const [logoPreview, setLogoPreview] = useState(null);
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
+  const specialistOptions = [
+    "Termite Control",
+    "Preconstruction Anti-Termite Treatment",
+    "General Pest Control",
+    "Cockroach Gel Treatment",
+    "Cockroach Control",
+    "Mosquito Control",
+    "Ants Control",
+    "Wood Borer Treatment",
+    "Rat Control",
+    "Bird Control",
+    "Spider Control",
+    "Lizard control",
+    "Dog ticks Control Treatment",
+    "Bed bug treatment",
+  ];
+
+  // Handle checkbox toggle for Specialist In
+  const handleCheckboxChange = (option) => {
+    let updated = [];
+    if (formData.specialistIn.includes(option)) {
+      updated = formData.specialistIn.filter((item) => item !== option);
+    } else {
+      updated = [...formData.specialistIn, option];
+    }
+    setFormData({ ...formData, specialistIn: updated });
+  };
 
   const validate = () => {
     const newErrors = {};
@@ -127,15 +155,19 @@ const AddVendor = () => {
       }
 
       const form = new FormData();
-      for (const key in cleanedData) {
-        if (key === 'image') {
-          cleanedData.image.forEach((img) => {
-            if (img) form.append('image', img);
-          });
-        } else {
-          form.append(key, cleanedData[key]);
-        }
-      }
+     
+    for (const key in cleanedData) {
+  if (key === 'image') {
+    cleanedData.image.forEach((img) => {
+      if (img) form.append('image', img);
+    });
+  } else if (key === 'specialistIn') {
+    cleanedData.specialistIn.forEach((item) => form.append('specialistIn[]', item)); // ✅ Correct way
+  } else {
+    form.append(key, cleanedData[key]);
+  }
+}
+
 
       // Append coordinates
       form.append('latitude', lat);
@@ -179,14 +211,30 @@ const AddVendor = () => {
       <label className="form-label">Since From</label>
       <input type="text" className="form-control" name="sinceFrom" value={formData.sinceFrom} onChange={handleChange} />
     </div>
-    <div className="form-group col-sm-3 mb-2">
-      <label className="form-label">Specialist In</label>
-      <input type="text" className="form-control" name="specialistIn" value={formData.specialistIn} onChange={handleChange} />
-    </div>
+       
+
     <div className="form-group col-sm-3 mb-2">
       <label className="form-label">Contact Person</label>
       <input type="text" className="form-control" name="contactPerson" value={formData.contactPerson} onChange={handleChange} />
     </div>
+      <div className="form-group row mb-2">
+                <label className="form-label">Specialist In</label>
+                {specialistOptions.map((option) => (
+                  <div className="form-check col-sm-2" key={option}>
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      value={option}
+                      checked={formData.specialistIn.includes(option)}
+                      onChange={() => handleCheckboxChange(option)}
+                      id={`check-${option}`}
+                    />
+                    <label className="form-check-label" htmlFor={`check-${option}`}>
+                      {option}
+                    </label>
+                  </div>
+                ))}
+              </div>
     <div className="form-group col-sm-3 mb-2">
       <label className="form-label">Contact Number</label>
       <input type="text" className="form-control" name="contactNumber" value={formData.contactNumber} onChange={handleChange} required />

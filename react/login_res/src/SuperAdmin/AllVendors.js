@@ -233,6 +233,9 @@ const AllVendor = () => {
                     <label>
                       <input type="radio" value="Commercial" checked={businessType === 'Commercial'} onChange={e => setBusinessType(e.target.value)} /> Commercial
                     </label>
+                       <label>
+                      <input type="radio" value="Both" checked={businessType === 'Both'} onChange={e => setBusinessType(e.target.value)} /> Both
+                    </label>
                   </div>
                 </div>
                 <div className="mb-3">
